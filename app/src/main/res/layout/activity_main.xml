@@ -29,11 +29,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:orientation="horizontal">
-                <de.hdodenhof.circleimageview.CircleImageView
+                <ImageView
+                    android:layout_width="40dp"
 
-                    android:layout_width="45dp"
-
-                    android:layout_height="45dp"
+                    android:layout_height="40dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/template_foto" />
                 <TextView
@@ -107,17 +106,15 @@
                     app:cardCornerRadius="8dp">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:orientation="vertical">
 
 
-                        <RatingBar
-                            android:id="@+id/ratingBar"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+
+
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
