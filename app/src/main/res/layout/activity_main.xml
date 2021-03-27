@@ -10,6 +10,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
+        android:background="@color/background"
         android:layout_height="match_parent">
 
         <View
@@ -21,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="22dp"
+            android:background="@color/background"
             android:layout_marginRight="22dp"
             android:orientation="vertical">
 
@@ -29,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:orientation="horizontal">
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
 
                     android:layout_height="40dp"
@@ -47,11 +49,11 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
                 <ImageView
-                    android:layout_width="40dp"
+                    android:layout_width="wrap_content"
 
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/buttonmenu" />
+                    android:src="@drawable/button_favorite" />
 
 
 
@@ -179,6 +181,7 @@
                         android:src="@drawable/contoh" />
                     <View
                         android:layout_width="match_parent"
+                        android:background="@color/background"
                         android:layout_height="20dp" />
                     <ImageView
                         android:layout_width="match_parent"
