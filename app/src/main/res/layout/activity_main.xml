@@ -10,6 +10,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
+        android:background="@color/background"
         android:layout_height="match_parent">
 
         <View
@@ -21,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="22dp"
+            android:background="@color/background"
             android:layout_marginRight="22dp"
             android:orientation="vertical">
 
@@ -29,32 +31,32 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:orientation="horizontal">
-
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/template_foto" />
-
                 <TextView
 
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:text="Hai, RAON"
                     android:layout_marginLeft="20dp"
-                    android:layout_weight="1"
-                    android:text="Hai, RAON" />
-
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
                 <View
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
-
                 <ImageView
-                    android:layout_width="40dp"
+                    android:layout_width="wrap_content"
 
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/buttonmenu" />
+                    android:src="@drawable/button_favorite" />
+
+
+
+
 
 
             </LinearLayout>
@@ -63,25 +65,23 @@
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="3dp"
+                android:textAlignment="textStart"
                 android:gravity="center_horizontal"
                 android:lineSpacingExtra="5sp"
                 android:text="Where do you want to go today?"
-                android:textAlignment="textStart"
                 android:textColor="#ccffffff"
                 android:textSize="15sp"
                 tools:ignore="RtlCompat" />
-
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.SearchView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:orientation="horizontal">
-
-                <androidx.appcompat.widget.SearchView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/search_bar" />
-            </LinearLayout>
+                android:background="@drawable/search_bar"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -114,6 +114,8 @@
                         android:orientation="vertical">
 
 
+
+
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -121,7 +123,6 @@
                 <View
                     android:layout_width="10dp"
                     android:layout_height="match_parent" />
-
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="114dp"
@@ -136,6 +137,7 @@
                         android:orientation="vertical">
 
 
+
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -143,6 +145,7 @@
                 <View
                     android:layout_width="10dp"
                     android:layout_height="match_parent" />
+
 
 
             </LinearLayout>
@@ -175,16 +178,16 @@
                         android:layout_height="155dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/contoh" />
-
                     <View
                         android:layout_width="match_parent"
+                        android:background="@color/background"
                         android:layout_height="20dp" />
-
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="155dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/contoh" />
+
 
 
                 </LinearLayout>
