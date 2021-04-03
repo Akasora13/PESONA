@@ -13,6 +13,10 @@
         <activity android:name=".faforit" />
         <activity android:name=".popular" />
         <activity android:name=".SplashScreenActivity" />
+
+        <activity android:name=".DetailActivity"/>
+    
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.Splash">
