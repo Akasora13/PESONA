@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.Window
+import id.internraion.pesona.intro.screens.FirstScreen
+import id.internraion.pesona.intro.ViewPagerFragment
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -17,8 +19,13 @@ class SplashScreenActivity : AppCompatActivity() {
 
         Handler(mainLooper).postDelayed(
             {
+
+                startActivity(Intent(this, FirstScreen::class.java))
+
+
                 startActivity(Intent(this,DetailActivity::class.java))
                 finish()
+
             },timeout
         )
     }
