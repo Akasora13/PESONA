@@ -79,6 +79,7 @@
                 android:orientation="horizontal">
                 <androidx.appcompat.widget.SearchView
                     android:layout_width="match_parent"
+                    android:outlineSpotShadowColor="@color/black"
                     android:background="@drawable/search_bar"
                     android:layout_height="match_parent"/>
             </LinearLayout>
@@ -127,6 +128,12 @@
                     android:layout_height="114dp"
                     android:layout_weight="1"
                     app:cardCornerRadius="8dp">
+                    //contoh
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="155dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/contoh" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -143,11 +150,19 @@
                 <View
                     android:layout_width="10dp"
                     android:layout_height="match_parent" />
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="114dp"
                     android:layout_weight="1"
+
                     app:cardCornerRadius="8dp">
+                    //contoh
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="155dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/contoh" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -155,7 +170,6 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:orientation="vertical">
-
 
 
                     </LinearLayout>
