@@ -7,7 +7,7 @@
     android:background="#D4D4C3"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".popular">
+    tools:context=".faforit">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,8 +29,32 @@
             android:textColor="#1c1939"
             android:textSize="18dp" />
     </LinearLayout>
+    <!--
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_firedb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_list_populer" />-->
 
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detailfaf"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/contoh" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
