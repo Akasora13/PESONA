@@ -4,34 +4,26 @@
     android:id="@+id/item_list_populer"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_margin="1dp">
 
 
 <androidx.cardview.widget.CardView
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
-android:layout_marginTop="30dp"
-android:layout_marginBottom="30dp"
+android:layout_marginTop="5dp"
+android:layout_marginBottom="5dp"
 app:cardCornerRadius="8dp"
-app:cardElevation="0dp">
+app:cardElevation="2dp">
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="155dp"
         android:scaleType="centerCrop"
         android:src="@drawable/contoh" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp" />
-
-
-
-
 </LinearLayout>
 </androidx.cardview.widget.CardView>
 </RelativeLayout>
