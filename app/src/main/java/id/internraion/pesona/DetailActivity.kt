@@ -9,7 +9,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class DetailActivity : AppCompatActivity() {
 
-    companion object{
+    companion object {
         @StringRes
         private val TAB_TITLES = intArrayOf(
             R.string.tab_text_1,
@@ -26,7 +26,7 @@ class DetailActivity : AppCompatActivity() {
         val viewPager: ViewPager2 = findViewById(R.id.viewPagerDetail)
         viewPager.adapter = sectionPagerDetailAdapter
         val tabs: TabLayout = findViewById(R.id.tl_main)
-        TabLayoutMediator(tabs, viewPager) {tab, position ->
+        TabLayoutMediator(tabs, viewPager) { tab, position ->
             tab.text = resources.getString(TAB_TITLES[position])
         }.attach()
     }
