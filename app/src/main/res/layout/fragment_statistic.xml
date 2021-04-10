@@ -6,6 +6,7 @@
     tools:context=".StatisticFragment">
 
     <com.github.aachartmodel.aainfographics.aachartcreator.AAChartView
+        android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/graph_visitor"/>
