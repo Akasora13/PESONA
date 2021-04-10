@@ -18,4 +18,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ini_faq_fragment">Ini FAQ Fragment</string>
+    <string name="ini_about_fragment">Ini About Fragment</string>
 </resources>
