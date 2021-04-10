@@ -7,130 +7,152 @@
     android:background="@color/background"
     tools:context=".DetailActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"></LinearLayout>
-
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:padding="16dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:cardCornerRadius="30dp">
+            android:layout_height="300dp"
+            android:layout_margin="8dp"
+            android:elevation="0dp"
+            app:cardCornerRadius="32dp">
 
             <com.flaviofaria.kenburnsview.KenBurnsView
-                android:id="@+id/iv_photo"
+                android:id="@+id/kenburn1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/template_foto" />
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/contoh" />
 
-            <ImageView
-                android:id="@+id/btn_fav"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv2_backButton"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_margin="8dp"
-                android:background="@drawable/circle_btn"
-                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
-                />
+                android:layout_margin="4dp"
+                android:elevation="0dp"
+                app:cardBackgroundColor="#40FFFFFF"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_backButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_tempatWisata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="65dp"
+                android:text="Kelingking Beach"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv2_favoriteButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="200dp"
+                android:layout_marginBottom="60dp"
+                android:elevation="0dp"
+                app:cardBackgroundColor="#40FFFFFF"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_favoriteButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_favorite_24"
+                    android:layout_margin="4dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="0dp"
+            android:layout_marginStart="16dp"
+            app:cardCornerRadius="32dp"
+            android:layout_gravity="bottom|left">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:src="@drawable/template_foto" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="0dp"
+            app:cardCornerRadius="32dp"
+            android:layout_gravity="bottom|center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:src="@drawable/template_foto"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="0dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="32dp"
+            android:layout_gravity="bottom|right">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:src="@drawable/template_foto"/>
 
         </androidx.cardview.widget.CardView>
 
     </FrameLayout>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="95dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="288dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="95dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="35dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="95dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="35dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/tv_namadestinasi"
-        android:layout_width="wrap_content"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_main"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Misalnya Pantai"
-        android:textSize="24sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView" />
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear1"/>
 
-    <ImageView
-        android:id="@+id/btn_back"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="8dp"
-        android:background="@drawable/circle_btn"
-        android:src="@drawable/ic_baseline_favorite_24"
-
-        app:layout_constraintBottom_toBottomOf="@+id/tv_namadestinasi"
-        app:layout_constraintStart_toEndOf="@+id/tv_namadestinasi"
-        app:layout_constraintTop_toTopOf="@+id/tv_namadestinasi" />
-
-    <LinearLayout
-        android:id="@+id/lineardetail"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerDetail"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tl_main"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp">
-
-        </com.google.android.material.tabs.TabLayout>
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:background="@color/white"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/viewPagerDetail"
-            android:layout_margin="16dp" />
-
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/tl_main" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
